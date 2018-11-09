@@ -498,8 +498,8 @@ module.exports = class bitstamp extends Exchange {
             request['limit'] = limit;
         }
         let response = await this[method] (this.extend (request, params));
-        let result = this.filterBy (response, 'type', '2');
-        return this.parseTrades (result, market, since, limit);
+        // let result = this.filterBy (response, 'type', '2');
+        return this.parseTrades (response, market, since, limit);
     }
 
     async fetchTransactions (code = undefined, since = undefined, limit = undefined, params = {}) {
