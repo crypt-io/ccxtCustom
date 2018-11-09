@@ -1,5 +1,5 @@
 {
-  "name": "ccxt",
+  "name": "ccxtCustom",
   "version": "1.17.481",
   "description": "A JavaScript / Python / PHP cryptocurrency trading library with support for 100+ exchanges",
   "main": "./ccxt.js",
